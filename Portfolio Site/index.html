@@ -18,7 +18,11 @@
         <!-- <input type="checkbox" id="menu"> -->
         <!-- <label class="menu_parent" for="menu"> -->
         <div class="menu_container" id="menu_container">
-            <img class="menu" src="images/bx_menu_alt_right.svg" alt="menu" onClick="toggleNavbar(open)" />
+            <div class="navbar_menu" onClick="toggleNavbar(open)">
+                <img class="menu" src="images/bx_menu_alt_right.svg" alt="menu" id="menu_icon" />
+                <img class="plus" src="images/plus.svg" alt="plus" id="plus">
+            </div>
+
 
             <!-- Navbar dropdown -->
             <ul class="menu_dropdown " id="menu_dropdown">
@@ -45,7 +49,6 @@
         </div>
         <!-- </label> -->
         <!-- <label class="plus_parent" for="menu"> -->
-        <img class="plus" src="images/plus.svg" alt="plus">
         <!-- </label> -->
 
 
@@ -66,7 +69,7 @@
             </p>
             <div class="buttons">
                 <button class="button">Work Together</button>
-                <button class="button secondaryButton">Work Together</button>
+                <button class="button secondaryButton">Resume</button>
             </div>
         </div>
 
@@ -80,12 +83,13 @@
 
             <div class="links">
                 <a href="https://www.snapchat.com/add/rajaram_soni10?share_id=oYB7WbmtemQ&locale=en-IN"><img
-                        src="images/snapchat.svg" alt="dribbble" /></a>
-                <a href="https://github.com/Rajaram-Soni"><img src="images/GitHub.svg" alt="GitHub" /></a>
+                        src="images/snapchat.svg" alt="dribbble" class="contact_link" /></a>
+                <a href="https://github.com/Rajaram-Soni"><img src="images/GitHub.svg" alt="GitHub"
+                        class="contact_link" /></a>
                 <a href="https://www.instagram.com/rajaram_soni_?igsh=MW1tZGZodnNkMXo4Mw=="><img
-                        src="images/instagram.svg" alt="instagram" /></a>
+                        src="images/instagram.svg" alt="instagram" class="contact_link" /></a>
                 <a href="https://www.linkedin.com/in/rajaram-soni-26b3a4257/"><img src="images/LinkedIn.svg"
-                        alt="linkdin" /></a>
+                        alt="linkdin" class="contact_link" /></a>
             </div>
         </div>
     </div>
@@ -255,12 +259,13 @@
             </h3>
             <div class="links">
                 <a href="https://www.snapchat.com/add/rajaram_soni10?share_id=oYB7WbmtemQ&locale=en-IN"><img
-                        src="images/snapchat.svg" alt="dribbble" /></a>
-                <a href="https://github.com/Rajaram-Soni"><img src="images/GitHub.svg" alt="GitHub" /></a>
+                        src="images/snapchat.svg" alt="dribbble" class="contact_link" /></a>
+                <a href="https://github.com/Rajaram-Soni"><img src="images/GitHub.svg" alt="GitHub"
+                        class="contact_link" /></a>
                 <a href="https://www.instagram.com/rajaram_soni_?igsh=MW1tZGZodnNkMXo4Mw=="><img
-                        src="images/instagram.svg" alt="instagram" /></a>
+                        src="images/instagram.svg" alt="instagram" class="contact_link" /></a>
                 <a href="https://www.linkedin.com/in/rajaram-soni-26b3a4257/"><img src="images/LinkedIn.svg"
-                        alt="linkdin" /></a>
+                        alt="linkdin" class="contact_link" /></a>
             </div>
         </div>
         <div class="right_part">
@@ -320,13 +325,13 @@
             <ul class="links">
                 <li class="link"><a
                         href="https://www.snapchat.com/add/rajaram_soni10?share_id=oYB7WbmtemQ&locale=en-IN"><img
-                            src="images/snapchat.svg" alt="snapchat"></a></li>
-                <li class="link"><a href="https://github.com/Rajaram-Soni"><img src="images/GitHub.svg"
-                            alt="github"></a></li>
+                            src="images/snapchat.svg" alt="snapchat" class="contact_link"></a></li>
+                <li class="link"><a href="https://github.com/Rajaram-Soni"><img src="images/GitHub.svg" alt="github"
+                            class="contact_link"></a></li>
                 <li class="link"><a href="https://www.instagram.com/rajaram_soni_?igsh=MW1tZGZodnNkMXo4Mw=="><img
-                            src="images/instagram.svg" alt="instagram"></a></li>
+                            src="images/instagram.svg" alt="instagram" class="contact_link"></a></li>
                 <li class="link"><a href="https://www.linkedin.com/in/rajaram-soni-26b3a4257/"><img
-                            src="images/LinkedIn.svg" alt=""></a></li>
+                            src="images/LinkedIn.svg" alt="linkedin" class="contact_link"></a></li>
             </ul>
             <h5 class="sub_title2">
                 Do you want this <span>XD Template</span> or this <span>page source</span>?
@@ -337,15 +342,20 @@
     <script>
         const toggleNavbar = (state) => {
             const menu_dropdown = document.getElementById('menu_dropdown');
+            const cross = document.getElementById('plus');
+            const menu_icon = document.getElementById('menu_icon');
 
             if (state = "open") {
                 if (menu_dropdown.style.display == "flex"
                 ) {
                     menu_dropdown.style.display = "none"
+                    cross.style.display = "none"
+                    menu_icon.style.display = "block"
                 }
                 else {
                     menu_dropdown.style.display = "flex"
-                    // menu_dropdown.style.position.top = "75px"
+                    cross.style.display = "block"
+                    menu_icon.style.display = "none"
                 }
 
             }

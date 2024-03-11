@@ -77,18 +77,29 @@
     }
 
     .menu_container {
-        width: 75px;
-        height: 75px;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
         background-color: transparent;
 
-        .menu {
-            width: 16px;
-        }
+        .navbar_menu {
+            width: 75px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
 
+            &:hover {
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                background-color: rgba(245, 222, 179, 0.1);
+            }
+
+            .menu {
+                width: 16px;
+                background-color: transparent;
+            }
+        }
 
         .menu_dropdown {
             background-color: black;
@@ -220,24 +231,6 @@
     }
 
     /* } */
-
-
-
-
-    /* #menu:checked~.menu_dropdown {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    } */
-
-    /* #menu:checked~.menu_parent {
-        display: none;
-    }
-
-    #menu:checked~.plus_parent {
-        display: block;
-    } */
 }
 
 /* Hero */
@@ -403,11 +396,16 @@
             gap: 13px;
             width: 168px;
 
-            img {
+            .contact_link {
                 width: 26.03px;
                 height: 26.03px;
                 filter: invert(56%) sepia(10%) saturate(5%) hue-rotate(95deg) brightness(88%) contrast(88%);
                 background-color: transparent;
+
+                &:hover {
+                    transform: scale(1.1);
+                    filter: invert(13%) sepia(44%) saturate(7490%) hue-rotate(18deg) brightness(108%) contrast(114%);
+                }
             }
         }
     }
@@ -470,6 +468,7 @@
             font-size: 18px;
             line-height: 30px;
             margin-bottom: 32px;
+            font-family: Nunito;
         }
 
         .buttons {
@@ -604,6 +603,7 @@
             font-size: 16px;
             line-height: 30px;
             margin-bottom: 32.1px;
+            font-family: Nunito;
         }
 
         .buttons {
@@ -705,6 +705,7 @@
             line-height: 30px;
             font-size: 18px;
             margin-bottom: 35px;
+            font-family: Nunito;
         }
 
         .buttons {
@@ -809,6 +810,10 @@
             box-shadow: 0px 14px 40px #00000014;
             border-radius: 5px;
 
+            &:hover {
+                transform: scale(1.02);
+            }
+
             .title_bar {
                 font-size: 26px;
                 display: flex;
@@ -878,6 +883,7 @@
             line-height: 30px;
             white-space: pre-line;
             margin-bottom: 30px;
+            font-family: Nunito;
         }
 
         .links {
@@ -887,11 +893,16 @@
             gap: 13px;
             width: 168px;
 
-            img {
+            .contact_link {
                 width: 26.03px;
                 height: 26.03px;
                 filter: invert(56%) sepia(10%) saturate(5%) hue-rotate(95deg) brightness(88%) contrast(88%);
                 background-color: transparent;
+
+                &:hover {
+                    transform: scale(1.1);
+                    filter: invert(13%) sepia(44%) saturate(7490%) hue-rotate(18deg) brightness(108%) contrast(114%);
+                }
             }
         }
     }
@@ -1074,10 +1085,15 @@
                 list-style: none;
                 background-color: transparent;
 
-                img {
+                .contact_link {
                     width: 20px;
                     height: 20px;
                     background-color: transparent;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        filter: invert(13%) sepia(44%) saturate(7490%) hue-rotate(18deg) brightness(108%) contrast(114%);
+                    }
                 }
             }
         }
