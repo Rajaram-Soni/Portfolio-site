@@ -656,6 +656,10 @@
         width: 50%;
         font-family: Nunito;
 
+        @media (max-width: 1000px) {
+            width: 100%;
+        }
+
         /* Form  */
         form {
             display: flex;
