@@ -1,3 +1,4 @@
+/* Common Styling */
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +7,12 @@
     transition: 0.3s;
     --primary: 233, 88, 65;
     --primary-hover: 216, 71, 48;
-    background-color: #f9f9f9;
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
+}
+
+.backgroundColor {
+    background-color: #f9f9f9;
 }
 
 .horizontal_spacing {
@@ -68,6 +72,7 @@
     }
 }
 
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -81,6 +86,7 @@
     /* Left part */
     .logo_link {
         background-color: transparent;
+        filter: invert(43%) sepia(60%) saturate(885%) hue-rotate(325deg) brightness(94%) contrast(95%);
 
         .logo {
             width: 50px;
@@ -299,7 +305,7 @@
             line-height: 65px;
             font-weight: 400;
             margin-bottom: 10px;
-            letter-spacing: 7.5px;
+            text-transform: uppercase;
 
             @media (max-width:1000px) {
                 text-align: center;
@@ -389,9 +395,9 @@
             .polygon {
                 width: 400px;
                 height: 350px;
-                background-image: url(images/p.jpeg);
+                background-image: url(images/profile-pic.png);
                 background-size: contain;
-                background-position: center;
+                background-position: top;
                 background-repeat: no-repeat;
                 -webkit-mask-image: url(images/Shadow.png);
                 mask-image: url(images/Shadow.png);
@@ -434,7 +440,7 @@
 .skills {
     display: flex;
     flex-direction: column;
-    margin-bottom: 150px;
+    padding-bottom: 150px;
 
     @media (max-width:1000px) {
         gap: 50px;
@@ -442,8 +448,8 @@
     }
 
     /* UX design and FrontDev skills  */
-    .part_1,
-    .part_3 {
+    .ux_design_section,
+    .front_dev_section {
         display: flex;
         align-items: stretch;
 
@@ -494,7 +500,7 @@
     }
 
     /* Data visualization skill */
-    .part_2 {
+    .data_visualization_section {
         display: flex;
         align-items: stretch;
 
@@ -549,11 +555,11 @@
 }
 
 /* Cards section  */
-.part_5 {
+.card_section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 135px;
+    padding-bottom: 135px;
 
     @media (max-width: 768px) {
         margin-bottom: 100px;
@@ -620,17 +626,13 @@
 }
 
 /* Contact me section  */
-.part_6 {
+.contact_me_section {
     display: flex;
     gap: 50px;
-    margin-bottom: 90px;
+    padding-bottom: 90px;
 
     @media (max-width: 1000px) {
         flex-direction: column;
-    }
-
-    @media (max-width: 768px) {
-        margin-bottom: 50px;
     }
 
     /* Left part  */
@@ -768,12 +770,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding-top: 45px;
     padding-bottom: 45px;
     background-color: #ffffff;
     gap: 40px;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 768px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
         flex-direction: column;
         align-items: center;
     }
@@ -782,52 +787,43 @@
     .left_part {
         background-color: transparent;
 
-        .logo_container {
+        .content {
             display: flex;
-            align-items: center;
+            flex-direction: column;
             gap: 15px;
-            background-color: transparent;
 
-            @media (max-width:1000px) {
+            @media (max-width:768px) {
                 justify-content: center;
                 flex-direction: column;
             }
 
-            .logo {
-                width: 75px;
-                height: 75px;
-                background-color: transparent;
-            }
 
             .text {
-                background-color: transparent;
                 display: flex;
                 flex-direction: column;
 
-                @media (max-width:1000px) {
+                @media (max-width:768px) {
                     align-items: center;
                 }
 
                 .title {
                     font-size: 38px;
-                    background-color: transparent;
                     display: flex;
+                    margin-bottom: 5px;
 
-                    @media (max-width:1000px) {
+                    @media (max-width:768px) {
                         flex-wrap: wrap;
                         justify-content: center;
                     }
 
                     span {
                         font-weight: lighter;
-                        background-color: transparent;
                     }
                 }
 
                 .sub_title {
                     font-size: 14px;
                     font-weight: 400;
-                    background-color: transparent;
 
                     @media (max-width:499px) {
                         text-align: center;
@@ -850,7 +846,7 @@
         justify-content: flex-end;
         background-color: #ffffff;
 
-        @media (max-width: 1000px) {
+        @media (max-width: 768px) {
             align-items: center;
         }
 
