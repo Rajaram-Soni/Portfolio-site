@@ -11,6 +11,26 @@
     scroll-padding-top: 90px;
 }
 
+/* Common css classes */
+.input_placeholder {
+
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width:500px) {
+        &::placeholder {
+            font-size: 16px;
+        }
+    }
+}
+
+.input_label {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+
 .backgroundColor {
     background-color: #f9f9f9;
 }
@@ -310,6 +330,10 @@
             @media (max-width:1000px) {
                 text-align: center;
             }
+
+            @media (max-width:425px) {
+                font-size: 45px;
+            }
         }
 
         .sub_title {
@@ -444,7 +468,6 @@
 
     @media (max-width:1000px) {
         gap: 50px;
-        margin-bottom: 50px;
     }
 
     /* UX design and FrontDev skills  */
@@ -560,10 +583,6 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 135px;
-
-    @media (max-width: 768px) {
-        margin-bottom: 100px;
-    }
 
     /* Cards container  */
     .cards {
@@ -686,6 +705,11 @@
                     background-color: #ffffff;
                     font-size: 18px;
                     padding: 0 25px;
+
+                    &:focus {
+                        outline: 2px solid rgb(var(--primary));
+                        outline-offset: 3px;
+                    }
                 }
             }
 
@@ -694,7 +718,7 @@
                 display: flex;
                 gap: 25px 15px;
 
-                @media (max-width: 455px) {
+                @media (max-width: 599px) {
                     flex-direction: column;
                 }
 
@@ -704,7 +728,7 @@
                     flex-direction: column;
                     gap: 15px;
 
-                    @media (max-width: 455px) {
+                    @media (max-width: 599px) {
                         width: 100%;
                     }
 
@@ -723,6 +747,11 @@
                         background-position: right .7em top 50%, 0 0;
                         background-size: 1em auto, 100%;
                         border-radius: 5px;
+
+                        &:focus {
+                            outline: 2px solid rgb(var(--primary));
+                            outline-offset: 3px;
+                        }
                     }
                 }
             }

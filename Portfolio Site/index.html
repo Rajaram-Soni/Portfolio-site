@@ -264,37 +264,37 @@
             <!-- Form  -->
             <form action="https://formspree.io/f/mvoeqnvp" method="POST">
                 <!-- Name -->
-                <h5 class="sub_title1">
-                    <label for="enter_name">Let's meet. What's your name?</label>
-                    <input type="text" name="enter_name" class="name" id="enter_name" placeholder="Enter your name"
+                <div class="sub_title1">
+                    <label for="enter_name" class="input_label">Let's meet. What's your name?</label>
+                    <input type="text" name="enter_name" class="name input_placeholder" id="enter_name" placeholder="Enter your name"
                         required>
-                </h5>
+                </div>
 
                 <!-- Email  -->
-                <h5 class="sub_title1">
-                    <label for="email">And your email?</label>
-                    <input type="email" name="enter_email" class="name" id="email"
+                <div class="sub_title1">
+                    <label for="email" class="input_label">And your email?</label>
+                    <input type="email" name="enter_email" class="name input_placeholder" id="email"
                         placeholder="Enter your email address" required>
-                </h5>
+                </div>
 
                 <!-- Help and priority  -->
                 <div class="help_container">
 
                     <!-- Help  -->
-                    <h5 class="help">
-                        <label for="help">How can I help you?</label>
+                    <div class="help">
+                        <label for="help" class="input_label">How can I help you?</label>
                         <select name="help" id="help">
                             <option value="UX Design">UX Design</option>
                             <option value="Data visualization">Data Visualization</option>
                             <option value="FrontEnd Development">FrontEnd Development</option>
                         </select>
-                    </h5>
+                    </div>
 
                     <!-- Priority  -->
-                    <h5 class="help">
-                        <label for="help">What's the priority?</label>
-                        <select name="priority" id="help" class="helpDropdown">
-                            <option value="We have time">We have time</option>
+                    <div class="help">
+                        <label for="help" class="input_label">What's the priority?</label>
+                        <select name="priority" id="help" class="helpDropdown" >
+                            <option value="We have time" >We have time</option>
                             <option value="High priority">High Priority</option>
                             <option value="Medium priority">Medium Priority</option>
                             <option value="Low priority">Low Priority</option>
@@ -303,15 +303,15 @@
                             <option value="Important">Important</option>
                             <option value="Not-Important">Not-Important</option>
                         </select>
-                    </h5>
+                    </div>
                 </div>
 
                 <!-- Project detail  -->
-                <h5 class="sub_title1 sub_title2">
-                    <label for="name_1">Explain here...</label>
-                    <textarea id="name_1" name="project_details" class="name" rows="7" cols="1"
+                <div class="sub_title1 sub_title2">
+                    <label for="name_1" class="input_label">Explain here...</label>
+                    <textarea id="name_1" name="project_details" class="name input_placeholder" rows="7" cols="1"
                         placeholder="Explain project here..." required></textarea>
-                </h5>
+                </div>
 
                 <div class="buttons">
                     <button type="submit" class="button">
