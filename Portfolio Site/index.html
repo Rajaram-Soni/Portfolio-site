@@ -61,6 +61,8 @@
 
     <!-- Hero -->
     <div class="hero horizontal_spacing" id="about_me">
+
+        <!-- Left part  -->
         <div class="left_part">
             <h1 class="title"><b>Rajaram</b> Soni</h1>
             <h6 class="sub_title">Web Developer</h6>
@@ -77,6 +79,7 @@
             </div>
         </div>
 
+        <!-- Right part -->
         <div class="right_part">
             <div class="userImageContainer">
                 <div class="polygon"></div>
@@ -95,8 +98,13 @@
         </div>
     </div>
 
+    <!-- Skills part -->
     <div class="skills">
-        <div class="part_2 horizontal_spacing" id="ux_design">
+
+        <!-- UX design skill -->
+        <div class="part_1 horizontal_spacing" id="ux_design">
+
+            <!-- Left part -->
             <div class="left_part">
                 <h3 class="sub_title sub_heading">
                     Innovate Together
@@ -110,15 +118,22 @@
                     yout digital products.
                 </p>
             </div>
+
+            <!-- Right part -->
             <div class="right_part">
                 <img src="images/image_1.jpg" alt="image" class="image" min-height="0px">
             </div>
         </div>
 
-        <div class="part_3 horizontal_spacing" id="data_visualization">
+        <!-- Data visualization skill  -->
+        <div class="part_2 horizontal_spacing" id="data_visualization">
+
+            <!-- Left part  -->
             <div class="left_part">
                 <img src="images/image_2.webp" alt="image" class="image">
             </div>
+
+            <!-- Right part  -->
             <div class="right_part">
                 <h3 class="sub_title sub_heading">
                     Understand Together
@@ -134,7 +149,10 @@
             </div>
         </div>
 
-        <div class="part_4 horizontal_spacing" id="front_dev">
+        <!-- FrontEnd dev skill  -->
+        <div class="part_3 horizontal_spacing" id="front_dev">
+
+            <!-- Left part  -->
             <div class="left_part">
                 <h3 class="sub_title sub_heading">
                     Create Together.
@@ -149,12 +167,15 @@
                     create and turn that idea into reality.
                 </p>
             </div>
+
+            <!-- Right part  -->
             <div class="right_part">
                 <img class="image" src="images/image_3.webp" alt="image">
             </div>
         </div>
     </div>
 
+    <!-- Cards section  -->
     <div class="part_5 horizontal_spacing" id="creation_process">
         <h3 class="sub_title sub_heading">
             Research. Together.
@@ -162,7 +183,11 @@
         <h2 class="title heading">
             Creation<span>Process</span>
         </h2>
+
+        <!-- Cards container  -->
         <ul class="cards">
+
+            <!-- Cards  -->
             <li class="card card_1">
                 <div class="title_bar">
                     <h5 class="number">1</h5>
@@ -217,7 +242,10 @@
         </ul>
     </div>
 
+    <!-- Contact me section  -->
     <div class="part_6 horizontal_spacing" id="work_together">
+
+        <!-- Left part -->
         <div class="left_part">
             <h3 class="sub_title sub_heading">
                 Let's create
@@ -227,57 +255,79 @@
             </h2>
             <p class="text">
                 Tell me about your needs and let’s start working together on the best solution for users and business.
-
+            </p>
+            <p class="text">
                 I’m not a freelancer, I will be part of your team.
             </p>
         </div>
+
+        <!-- Right part  -->
         <div class="right_part">
-            <h5 class="sub_title1">
-                Let's meet. What's your name?
-                <input type="text" class="name" placeholder="Enter your name">
-            </h5>
-            <h5 class="sub_title1">
-                And your email...
-                <input type="email" class="name" placeholder="Enter your email address">
-            </h5>
-            <div class="help_container">
-                <h5 class="help">
-                    <label for="help">How can I help you?</label>
-                    <select name="help" id="help">
-                        <option value="placeholder">App design</option>
-                        <option value="placeholder">UX Design</option>
-                        <option value="placeholder">Data Visualization</option>
-                        <option value="placeholder">FrontEnd Development</option>
-                    </select>
+
+            <!-- Form  -->
+            <form action="https://formspree.io/f/mvoeqnvp" method="POST">
+                <!-- Name -->
+                <h5 class="sub_title1">
+                    <label for="enter_name">Let's meet. What's your name?</label>
+                    <input type="text" name="enter_name" class="name" id="enter_name" placeholder="Enter your name">
                 </h5>
-                <h5 class="help">
-                    <label for="help">What's the priority?</label>
-                    <select name="help" id="help" class="helpDropdown">
-                        <option value="placeholder">We have time</option>
-                        <option value="placeholder">High Priority</option>
-                        <option value="placeholder">Medium Priority</option>
-                        <option value="placeholder">Low Priority</option>
-                        <option value="placeholder">Optional</option>
-                        <option value="placeholder">Urgent</option>
-                        <option value="placeholder">Important</option>
-                        <option value="placeholder">Not-Important</option>
-                    </select>
+
+                <!-- Email  -->
+                <h5 class="sub_title1">
+                    <label for="email">And your email?</label>
+                    <input type="email" name="enter_email" class="name" id="email" placeholder="Enter your email address">
                 </h5>
-            </div>
-            <h5 class="sub_title1 sub_title2">
-                <label for="name_1"> Tell me more about your project</label>
-                <textarea id="name_1" class="name" rows="7" cols="1"
-                    placeholder="Budget, extra details, deadlines, special requirements…"></textarea>
-            </h5>
-            <div class="buttons">
-                <button class="button">
-                    Let's work
-                </button>
-            </div>
+
+                <!-- Help and priority  -->
+                <div class="help_container">
+
+                    <!-- Help  -->
+                    <h5 class="help">
+                        <label for="help">How can I help you?</label>
+                        <select name="help" id="help">
+                            <option value="UX Design">UX Design</option>
+                            <option value="Data visualization">Data Visualization</option>
+                            <option value="FrontEnd Development">FrontEnd Development</option>
+                        </select>
+                    </h5>
+
+                    <!-- Priority  -->
+                    <h5 class="help">
+                        <label for="help">What's the priority?</label>
+                        <select name="priority" id="help" class="helpDropdown">
+                            <option value="We have time">We have time</option>
+                            <option value="High priority">High Priority</option>
+                            <option value="Medium priority">Medium Priority</option>
+                            <option value="Low priority">Low Priority</option>
+                            <option value="Optional">Optional</option>
+                            <option value="Urgent">Urgent</option>
+                            <option value="Important">Important</option>
+                            <option value="Not-Important">Not-Important</option>
+                        </select>
+                    </h5>
+                </div>
+
+                <!-- Project detail  -->
+                <h5 class="sub_title1 sub_title2">
+                    <label for="name_1">Explain here...</label>
+                    <textarea id="name_1" name="project_details" class="name" rows="7" cols="1"
+                        placeholder="Explain project here..."></textarea>
+                </h5>
+
+                <div class="buttons">
+                    <button type="submit" class="button">
+                        Let's work
+                    </button>
+                </div>
+            </form>
+
         </div>
     </div>
 
+    <!-- Footer  -->
     <div class="footer horizontal_spacing" id="footer">
+
+        <!-- Left part  -->
         <div class="left_part">
             <div class="logo_container">
                 <a href="\"> <img class="logo" src="images/logo.png" alt="logo"> </a>
@@ -286,14 +336,14 @@
                         Rajaram <span>Soni</span>
                     </h3>
                     <h5 class="sub_title">
-                        FrontEnd Developer & Consultant
+                        Web Developer
                     </h5>
+
                 </div>
             </div>
-            <h5 class="sub_title1">
-                &copy; 2024 Rajaram Soni. All rights reserved.
-            </h5>
         </div>
+
+        <!-- Right part  -->
         <div class="right_part">
             <ul class="links">
                 <li class="link"><a href="https://www.snapchat.com/add/rajaram_soni10" target="_blank"><img
@@ -308,6 +358,7 @@
         </div>
     </div>
 
+    <!-- Js code for menu dropdown  -->
     <script>
         const toggleNavbar = (state) => {
             const menu_dropdown = document.getElementById('menu_dropdown');
@@ -315,12 +366,16 @@
             const menu_icon = document.getElementById('menu_icon');
 
             if (state = "open") {
+
+                // If menu dropdown is open than on click close it 
                 if (menu_dropdown.style.display == "flex"
                 ) {
                     menu_dropdown.style.display = "none"
                     cross.style.display = "none"
                     menu_icon.style.display = "block"
                 }
+
+                // If menu dropdown is close than on click close it 
                 else {
                     menu_dropdown.style.display = "flex"
                     cross.style.display = "block"
@@ -328,6 +383,7 @@
                 }
 
             }
+
             else if (state = "close") {
                 menu_dropdown.style.display = "none"
             }
