@@ -30,23 +30,27 @@
                 </li>
                 <li class="item1 item2">About Me</li>
 
+                <li class="item ux_design" onClick="toggleNavbar(close)"><a href="#ux_design">UX Design</a>
+                </li>
+                <li class="item1 item3">UX Design</li>
+
+                <li class="item data_visualization" onClick="toggleNavbar(close)"><a href="#data_visualization">Data
+                        Visualization</a>
+                </li>
+                <li class="item1 item4">Data Visualization</li>
+
                 <li class="item front_dev" onClick="toggleNavbar(close)"><a href="#front_dev">FrontEnd
                         Developer</a>
                 </li>
-                <li class="item1 item3">FrontEnd Developer</li>
-
+                <li class="item1 item5">FrontEnd Developer</li>
 
                 <li class="item creation_process" onClick="toggleNavbar(close)"><a href="#creation_process">Creation
                         Process</a></li>
-                <li class="item1 item4">Creation Process</li>
+                <li class="item1 item6">Creation Process</li>
 
-                <li class="item work_together" onClick="toggleNavbar(close)"><a href="#work_together">Work Together</a>
-                </li>
-                <li class="item1 item5">Work Together</li>
-
-                <li class="item contact_me" onClick="toggleNavbar(close)"><a href="#footer">Contact
+                <li class="item contact_me" onClick="toggleNavbar(close)"><a href="#work_together">Contact
                         Me</a></li>
-                <li class="item1 item6">Contact Me</li>
+                <li class="item1 item7">Contact Me</li>
 
                 <li class="item1 menu_text">Menu</li>
             </ul>
@@ -92,12 +96,12 @@
     </div>
 
     <div class="skills">
-        <div class="part_2 horizontal_spacing">
+        <div class="part_2 horizontal_spacing" id="ux_design">
             <div class="left_part">
-                <h3 class="sub_title">
+                <h3 class="sub_title sub_heading">
                     Innovate Together
                 </h3>
-                <h2 class="title">
+                <h2 class="title heading">
                     UX<span>Design</span>
                 </h2>
                 <p class="text">
@@ -111,17 +115,17 @@
             </div>
         </div>
 
-        <div class="part_3 horizontal_spacing">
+        <div class="part_3 horizontal_spacing" id="data_visualization">
             <div class="left_part">
                 <img src="images/image_2.webp" alt="image" class="image">
             </div>
             <div class="right_part">
-                <h5 class="sub_title">
+                <h3 class="sub_title sub_heading">
                     Understand Together
-                </h5>
-                <h3 class="title">
-                    Data<span>Visualization</span>
                 </h3>
+                <h2 class="title heading">
+                    Data<span>Visualization</span>
+                </h2>
                 <p class="text">
                     Create personalized infographics to bring your data to a very friendly level so that anyone can
                     understand in the best
@@ -132,12 +136,12 @@
 
         <div class="part_4 horizontal_spacing" id="front_dev">
             <div class="left_part">
-                <h5 class="sub_title">
+                <h3 class="sub_title sub_heading">
                     Create Together.
-                </h5>
-                <h3 class="title">
-                    Front<span>Dev</span>
                 </h3>
+                <h2 class="title heading">
+                    Front<span>Dev</span>
+                </h2>
                 <p class="text">
                     I can help you develop your digital product, thanks to the experience gained in HTML 5, CSS 3, JS
                     and
@@ -152,12 +156,12 @@
     </div>
 
     <div class="part_5 horizontal_spacing" id="creation_process">
-        <h5 class="sub_title">
+        <h3 class="sub_title sub_heading">
             Research. Together.
-        </h5>
-        <h3 class="title">
-            Creation<span>Process</span>
         </h3>
+        <h2 class="title heading">
+            Creation<span>Process</span>
+        </h2>
         <ul class="cards">
             <li class="card card_1">
                 <div class="title_bar">
@@ -215,54 +219,48 @@
 
     <div class="part_6 horizontal_spacing" id="work_together">
         <div class="left_part">
-            <h5 class="sub_title">
+            <h3 class="sub_title sub_heading">
                 Let's create
-            </h5>
-            <h3 class="title">
-                Work<span>Together</span>
             </h3>
+            <h2 class="title heading">
+                Work<span>Together</span>
+            </h2>
             <p class="text">
                 Tell me about your needs and let’s start working together on the best solution for users and business.
 
                 I’m not a freelancer, I will be part of your team.
             </p>
-            <h5 class="sub_title">
-                My digital print
-            </h5>
-            <h3 class="title">
-                let’s<span>Connect</span>
-            </h3>
-            <div class="links">
-                <a href="https://www.snapchat.com/add/rajaram_soni10" target="_blank"><img src="images/snapchat.svg"
-                        alt="dribbble" class="contact_link" /></a>
-                <a href="https://github.com/Rajaram-Soni" target="_blank"><img src="images/GitHub.svg" alt="GitHub"
-                        class="contact_link" /></a>
-                <a href="https://www.instagram.com/rajaram_soni_?igsh=MW1tZGZodnNkMXo4Mw==" target="_blank"><img
-                        src="images/instagram.svg" alt="instagram" class="contact_link" /></a>
-                <a href="https://www.instagram.com/rajaram_soni_" target="_blank"><img src="images/LinkedIn.svg"
-                        alt="linkdin" class="contact_link" /></a>
-            </div>
         </div>
         <div class="right_part">
             <h5 class="sub_title1">
                 Let's meet. What's your name?
-                <input type="text" class="name">
+                <input type="text" class="name" placeholder="Enter your name">
             </h5>
             <h5 class="sub_title1">
                 And your email...
-                <input type="email" class="name">
+                <input type="email" class="name" placeholder="Enter your email address">
             </h5>
             <div class="help_container">
                 <h5 class="help">
                     <label for="help">How can I help you?</label>
                     <select name="help" id="help">
                         <option value="placeholder">App design</option>
+                        <option value="placeholder">UX Design</option>
+                        <option value="placeholder">Data Visualization</option>
+                        <option value="placeholder">FrontEnd Development</option>
                     </select>
                 </h5>
                 <h5 class="help">
                     <label for="help">What's the priority?</label>
-                    <select name="help" id="help">
+                    <select name="help" id="help" class="helpDropdown">
                         <option value="placeholder">We have time</option>
+                        <option value="placeholder">High Priority</option>
+                        <option value="placeholder">Medium Priority</option>
+                        <option value="placeholder">Low Priority</option>
+                        <option value="placeholder">Optional</option>
+                        <option value="placeholder">Urgent</option>
+                        <option value="placeholder">Important</option>
+                        <option value="placeholder">Not-Important</option>
                     </select>
                 </h5>
             </div>
@@ -307,9 +305,6 @@
                 <li class="link"><a href="https://www.instagram.com/rajaram_soni_" target="_blank"><img
                             src="images/LinkedIn.svg" alt="linkedin" class="contact_link"></a></li>
             </ul>
-            <h5 class="sub_title2">
-                Do you want this <span>XD Template</span> or this <span>page source</span>?
-            </h5>
         </div>
     </div>
 
